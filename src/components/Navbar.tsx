@@ -4,6 +4,7 @@ import { Sprout, ShoppingCart, BarChart3, User } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../hooks/useAuth';
 import { useCartStore } from '../lib/store';
+import favicon from '../favicon.ico';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <img 
-              src="/favicon.ico" 
+              src={favicon}
               alt="Mercagricultor Logo" 
               className="h-12 w-12 mr-2"
             />
