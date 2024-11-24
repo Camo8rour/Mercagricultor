@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-new-base-url/',
+  base: '/Mercagricultor/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
