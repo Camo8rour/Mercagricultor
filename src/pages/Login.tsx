@@ -14,13 +14,13 @@ type LoginForm = z.infer<typeof loginSchema>;
 
 export function Login() {
   const navigate = useNavigate();
-  const setUser = useAuthStore((state) => state.setUser);
+  const login = useAuthStore((state) => state.login);
   const { register, handleSubmit, formState: { errors } } = useForm<LoginForm>({
     resolver: zodResolver(loginSchema),
   });
 
   const onSubmit = (data: LoginForm) => {
-    setUser({
+    login({
       id: '1',
       name: 'John Doe',
       email: data.email,
