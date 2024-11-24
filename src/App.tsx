@@ -21,6 +21,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-[#FDF5E6] flex flex-col">
         <Navbar />
+        <Toaster position="top-center" />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -76,7 +77,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <Toaster position="top-right" />
       </div>
     </Router>
   );
