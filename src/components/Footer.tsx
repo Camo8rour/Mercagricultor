@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
@@ -23,22 +24,24 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <motion.a 
-                  href="/about-us" 
-                  className="hover:text-white transition-colors inline-block"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Sobre Nosotros
-                </motion.a>
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <Link 
+                    to="/about-us" 
+                    className="hover:text-white transition-colors inline-block"
+                  >
+                    Sobre Nosotros
+                  </Link>
+                </motion.div>
               </li>
               <li>
-                <motion.a 
-                  href="/gacheta-products" 
-                  className="hover:text-white transition-colors inline-block"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Productos
-                </motion.a>
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <Link 
+                    to="/gacheta-products" 
+                    className="hover:text-white transition-colors inline-block"
+                  >
+                    Productos
+                  </Link>
+                </motion.div>
               </li>
             </ul>
           </div>
@@ -50,26 +53,28 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <motion.a
-                  href="https://www.gacheta-cundinamarca.gov.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-block"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Alcaldía de Gachetá
-                </motion.a>
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <a
+                    href="https://www.gacheta-cundinamarca.gov.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors inline-block"
+                  >
+                    Alcaldía de Gachetá
+                  </a>
+                </motion.div>
               </li>
               <li>
-                <motion.a
-                  href="https://es.wikipedia.org/wiki/Gachet%C3%A1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-block"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Información de Gachetá
-                </motion.a>
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <a
+                    href="https://es.wikipedia.org/wiki/Gachet%C3%A1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors inline-block"
+                  >
+                    Información de Gachetá
+                  </a>
+                </motion.div>
               </li>
             </ul>
           </div>
