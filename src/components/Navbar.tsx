@@ -32,7 +32,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <img 
-              src="/src/favicon.ico" 
+              src="/favicon.ico" 
               alt="Mercagricultor Logo" 
               className="h-12 w-12 mr-2"
             />
